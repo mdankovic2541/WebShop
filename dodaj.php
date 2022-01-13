@@ -68,11 +68,8 @@ if (isset($_POST['spremi'])) {
     }
     else $cijena = $_POST['cijena'];
 
-    if (empty($_POST['tip'])) {
-        $errorMsg .= "Tip obavezan. ";
-        $isFilled = false;
-    }
-    else $tip = $_POST['tip'];
+    
+    $tip = $_POST['tip'];
 
     if($isFilled) {
         $query = "INSERT INTO artikl (kolicina, naziv,kolekcija, marka, spol,vrsta,velicina,cijena,tip) VALUES ('$kolicina', '$naziv','$kolekcija', '$marka', '$spol','$vrsta','$velicina','$cijena','$tip')";
@@ -126,7 +123,19 @@ if (isset($_POST['spremi'])) {
                                 <label for="marka" class="form-label">Marka</label>
                                 <select class="form-select" name="marka">
                                     <option value="Nike">Nike</option>
-                                    <option value="Adidas">Adidas</option>
+                                    <option value="Addidas">Addidas</option>
+                                    <option value="Armani">Armani</option>
+                                    <option value="Balenciaga">Balenciaga</option>
+                                    <option value="Gucci">Gucci</option>
+                                    <option value="Karl Lagerfield">Karl Lagerfield</option>
+                                    <option value="Levis">Levis</option>
+                                    <option value="Louis Vuitton">Louis Vuitton</option>
+                                    <option value="Prada">Prada</option>
+                                    <option value="Ralph Lauren">Ralph Lauren</option>
+                                    <option value="Underarmour">Underarmour</option>
+                                    <option value="Versace">Versace</option>
+                                    <option value="Tommy Hilfiger">Tommy Hilfiger</option>
+                                    <option value="Calvin Klein">Calvin Klein</option>
                                 </select>
                             </div>
                             <div class="col-md-4">

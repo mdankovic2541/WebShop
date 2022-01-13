@@ -95,7 +95,7 @@ session_start();
             <div class="col-md-9 pt-3">
                 <div class= "row">
                 <?php
-                $sql = "SELECT naziv, velicina, cijena, marka, tip, id FROM artikl WHERE vrsta='dječja' AND kolekcija ='proljeće'";
+                $sql = "SELECT naziv, velicina, cijena, marka, tip, id FROM artikl WHERE vrsta='muška' AND kolekcija ='jesen'";
                 $result = mysqli_query($conn, $sql);
                 
                 if (mysqli_num_rows($result) > 0) {
