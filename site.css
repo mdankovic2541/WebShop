@@ -1,0 +1,94 @@
+
+div.gallery {
+  border: 1px solid #ccc;
+}
+
+div.gallery:hover {
+  border: 1px solid #777;
+}
+
+div.gallery img {
+  width: 100%;
+  height: auto;
+}
+
+div.desc {
+  padding: 15px;
+  text-align: center;
+}
+
+
+
+.responsive {
+  padding: 0 6px;
+  float: left;
+  width: 24.99999%;
+}
+
+@media only screen and (max-width: 700px) {
+  .responsive {
+    width: 49.99999%;
+    margin: 6px 0;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .responsive {
+    width: 100%;
+  }
+}
+
+.clearfix:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+body{
+  height: 100vh;
+  width: 100%;
+  background-image: url('Slike/bgimg.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+main{
+  margin: 3% 0;
+  
+}
+  
+#pslika{
+  max-width: 250px;
+  max-height:250px;
+  min-width: 100px;
+  min-height:250px;
+  height: 100%;
+  width: 100%;
+}
+
+#filter{
+  margin: 10% 10%;
+}
+
+#sdb1, #sdb2, #sdb3, #ic1, #ic2, #ic3{
+  max-width: 7px !important;
+  width: 100%;
+  max-height: 7px !important;
+  height: 100%;
+}
+.container-fluid {
+  position: relative;
+  text-align: center;
+  color: white;
+}
+/* Top left text */
+.top-left {
+  position: absolute;
+  top: 1.5%;
+  left: 2.5%;
+  background-color: rgb(255, 0, 0);
+  opacity: 70;
+}
+
+

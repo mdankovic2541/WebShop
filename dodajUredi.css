@@ -1,0 +1,19 @@
+
+h1{
+    text-align: center;
+    color: black;
+    margin: 2%;
+}
+
+
+
+body {
+    margin: 2% auto 0;
+    background-color: darkgrey;
+    
+}
+#errorMsg {
+    color: red;
+    text-shadow: 1px 1px 3px darkred;
+}
+
